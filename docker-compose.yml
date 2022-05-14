@@ -5,9 +5,11 @@ services:
       context: .
       dockerfile: ./strapi-app/Dockerfile
     tty: true
+    working_dir: /srv/app
     volumes:
       - ./strapi-app:/srv/app
-    working_dir: /srv/app
+    ports:
+      - '1337:1337'
     depends_on:
       - postgres
 
