@@ -15,8 +15,7 @@ services:
       - |
         ln -s /etc/nginx/sites-available/strapi.conf /etc/nginx/sites-enabled/strapi.conf
         service nginx start
-        pm2 start server.js
-        pm2 logs
+        yarn develop
     ports:
       - '1337:1337'
       - '8080:8080'
