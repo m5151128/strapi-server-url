@@ -8,14 +8,6 @@ services:
     working_dir: /srv/app
     volumes:
       - ./strapi-app:/srv/app
-    entrypoint:
-      - sh
-    command:
-      - -c
-      - |
-        ln -s /etc/nginx/sites-available/strapi.conf /etc/nginx/sites-enabled/strapi.conf
-        service nginx start
-        yarn develop
     ports:
       - '1337:1337'
       - '8080:8080'
