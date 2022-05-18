@@ -9,7 +9,6 @@ services:
     volumes:
       - ./strapi-app:/srv/app
     ports:
-      - '1337:1337'
       - '8080:8080'
     depends_on:
       - postgres

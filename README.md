@@ -20,4 +20,4 @@ http://localhost:8080/api/
 
 ### admin
 
-http://localhost:1337/admin/
+http://localhost:8080/admin/
