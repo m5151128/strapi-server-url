@@ -8,8 +8,6 @@ RUN yarn install
 
 COPY ./strapi-app/ /srv/app
 
-COPY ./strapi-app/server.js /srv/app
-
 RUN apt-get update
 RUN apt-get install -y nginx
 RUN apt-get install -y vim
