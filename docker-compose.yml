@@ -6,8 +6,6 @@ services:
       dockerfile: ./strapi-app/Dockerfile
     tty: true
     working_dir: /srv/app
-    volumes:
-      - ./strapi-app:/srv/app
     ports:
       - '8080:8080'
     depends_on:
